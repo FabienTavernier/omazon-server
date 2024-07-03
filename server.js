@@ -2,15 +2,23 @@ require('dotenv').config();
 
 const jsonServer = require('json-server');
 const jwt = require('jsonwebtoken');
+const path = require('path');
 
 const { SERVER_PORT, JWT_SECRET_KEY, JWT_EXP_TIME } = process.env;
 
 const server = jsonServer.create();
 const router = jsonServer.router('./db.json');
-const middlewares = jsonServer.defaults();
+const middlewares = jsonServer.defaults({
+  static: path.join(__dirname, 'public')
+});
 
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
+
+// Route pour visualiser les produits
+server.get('/display', (req, res) => {
+  res.sendFile(path.join(__dirname, 'display/index.html'));
+});
 
 // Route Login
 server.post('/login', (req, res) => {
