@@ -1,0 +1,36 @@
+### Notre token n'est valide que 3 h… pour tester « hors délai »
+### on ne va pas récupérer le token et le ré-écrire ici à chaque fois !
+### On dynamise, variabilise ! Et oui c'est possible ici aussi !!!
+
+### Variables
+
+@baseURL = http://localhost:3000
+@email = dave.lopper@mail.fr
+@password = ilovereact
+# @email = anne.onyme@mail.fr
+# @password = chut
+
+### On peut variabiliser un premier appel API en le nommant
+### ici on fait un premier appel pour se connecter
+
+# @name login
+POST {{baseURL}}/login HTTP/1.1
+content-type: application/json;charset=UTF-8
+
+{
+  "email": "{{email}}",
+  "password": "{{password}}"
+}
+
+### notre seconde requête pour récupérer les produits du panier
+### on peut récupérer la réponse de notre première requête
+### avec `login.response.body` et récupérer ainsi une propriété
+### (ici le token)
+@token = {{login.response.body.accessToken}}
+
+GET {{baseURL}}/cart HTTP/1.1
+Authorization: Bearer {{token}}
+
+### si pas de token, doit renvoyer un tableau vide
+GET {{baseURL}}/cart HTTP/1.1
+

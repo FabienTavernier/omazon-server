@@ -1,0 +1,344 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Dave",
+      "lastName": "Lopper",
+      "email": "dave.lopper@mail.fr",
+      "password": "ilovereact"
+    },
+    {
+      "id": 2,
+      "firstName": "Anne",
+      "lastName": "Onyme",
+      "email": "anne.onyme@mail.fr",
+      "password": "chut"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Trixie Frisbee Caoutchouc Naturel 22 cm pour Chien, Coloris aléatoire",
+      "price": 8.99,
+      "image": "frisbee.webp",
+      "categoryId": 1,
+      "tagId": 3
+    },
+    {
+      "id": 2,
+      "title": "PETKIT Pura Max Litiere Chat Autonettoyante, Bac à Litière Autonettoyante, xSecure/élimination des Odeurs/Contrôle APP/Capacité Maximale de 76L pour Plusieurs Chats",
+      "price": 599.99,
+      "image": "litiere.webp",
+      "categoryId": 1,
+      "tagId": null
+    },
+    {
+      "id": 3,
+      "title": "Omazon Basics sacs à déjections canines avec distributeur et clip pou",
+      "price": 6.29,
+      "image": "sacs-caca.webp",
+      "categoryId": 1,
+      "tagId": 1
+    },
+    {
+      "id": 4,
+      "title": "LUXÉOL - Sérum Barbe Pousse - Densité & Epaisseur - Aide À La Pousse De La Barbe & Amélioration Du Poils - Fabriqué En Europe - 60ml",
+      "price": 22.49,
+      "image": "barbe.webp",
+      "categoryId": 2,
+      "tagId": 2
+    },
+    {
+      "id": 5,
+      "title": "L'Oréal Paris - CC Crème C'est Magic - Embellisseur de Teint Anti-Rougeurs- Soin Teinté - Tous Types de Peaux - Couvrance Légère et Naturelle - SPF 11 - Teinte : Universelle - 30 ml",
+      "price": 11.64,
+      "image": "creme.webp",
+      "categoryId": 2,
+      "tagId": null
+    },
+    {
+      "id": 6,
+      "title": "Maybelline New-York - Mascara volume et longueur - Sky High – Teinte : Marron, 7,2 ml",
+      "price": 9.11,
+      "image": "mascara.webp",
+      "categoryId": 2,
+      "tagId": 4
+    },
+    {
+      "id": 7,
+      "title": "Loctite Super Glue-3 | Précision (flacon de 5 g) – Colle forte pour réparations précises – Colle liquide tous matériaux – Colle transparente à séchage rapide",
+      "price": 3.59,
+      "image": "glue.webp",
+      "categoryId": 3,
+      "tagId": 3
+    },
+    {
+      "id": 8,
+      "title": "Multimètre Numérique KAIWEETS, Multimètre Digital, Voltmètre Multifonctions 2000 Comptes, Testeur Électrique, Ohmmètre, Mesure La Tension CA/CC, Courant CC, Résistance, Continuité, Diode",
+      "price": 16.97,
+      "image": "multimetre.webp",
+      "categoryId": 3,
+      "tagId": null
+    },
+    {
+      "id": 9,
+      "title": "FACOM Monture de Scie à Métaux - Poignée Ergonomique - Légère et Compact - 601PB",
+      "price": 24.9,
+      "image": "scie.webp",
+      "categoryId": 3,
+      "tagId": null
+    },
+    {
+      "id": 10,
+      "title": "Scie sauteuse 720W avec 6 lames dans coffret Makpac - MAKITA 4351FCTJ",
+      "price": 146,
+      "image": "scie-sauteuse.webp",
+      "categoryId": 3,
+      "tagId": 2
+    },
+    {
+      "id": 11,
+      "title": "Facom Coffret de tournevis, Multi, 5 Pièces",
+      "price": 28.78,
+      "image": "tournevis.webp",
+      "categoryId": 3,
+      "tagId": null
+    },
+    {
+      "id": 12,
+      "title": "Teamgee Écran Portable de 14\", Extension Écran FHD IPS pour Ordinateur Portable avec Pliable à 90°/Deux Haut-Parleurs, HDMI/USB-A/Type-C Plug and Play pour Ordinateurs Portables",
+      "price": 245.99,
+      "image": "portable.webp",
+      "categoryId": 4,
+      "tagId": null
+    },
+    {
+      "id": 13,
+      "title": "kacbuy Carte SD 512 Go Carte Mémoire Haute Vitesse Carte TF étanche Enregistrement Vidéo SD Carte pour Smartphone, Dashcam, Drone et Caméra d'action (512Go)",
+      "price": 19.99,
+      "image": "sd.webp",
+      "categoryId": 4,
+      "tagId": null
+    },
+    {
+      "id": 14,
+      "title": "niuniutab Tablette Android,Tablette10 Pouces,4 Go de RAM 64 Go de ROM (128 Go Extensible),Caméra 2MP+ 8MP，2.5D IPS 800x1280 FHD，Grande Batterie Tablette Tactile.(Argent)",
+      "price": 79.99,
+      "image": "tablet.webp",
+      "categoryId": 4,
+      "tagId": 4
+    },
+    {
+      "id": 15,
+      "title": "Locpof Clé USB 982 Go USB 3.0 Cle USB Clef USB 982 Go avec Porte-Clés Mémoire Stick Métal Imperméable Mini Clés USB pour PC tablettes, Ordinateurs Portables",
+      "price": 21.99,
+      "image": "usb-key.webp",
+      "categoryId": 4,
+      "tagId": null
+    },
+    {
+      "id": 16,
+      "title": "Weber Barbecue à Charbon Compact Kettle 47cm - Barbecue à Couvercle, Trépied et Roues - Barbecue d'Extérieur Autoportant avec Vasque en Porcelaine Émaillée - Noir (1221004)",
+      "price": 70.95,
+      "image": "bbq.webp",
+      "categoryId": 5,
+      "tagId": 2
+    },
+    {
+      "id": 17,
+      "title": "Edihome, Kit Barbecue, Ustensiles Barbecue, Ensemble d'accessoires de 25 pièces, Professionnel, Acier Inoxydable, Cadeau d'homme, Étui de Gril de Qualité Supérieure.",
+      "price": 29.99,
+      "image": "bbq-kit.webp",
+      "categoryId": 5,
+      "tagId": null
+    },
+    {
+      "id": 18,
+      "title": "Kärcher Nettoyeur Haute Pression K 2 Universal Edition, Pression : max. 110 bar, Débit : 360 l/h, Surface : 20 m²/h, Filtre à Eau, Poids : 3,8 kg, Flexible et Pistolet Haute Pression, Rotabuse",
+      "price": 63.95,
+      "image": "karcher.webp",
+      "categoryId": 5,
+      "tagId": null
+    },
+    {
+      "id": 19,
+      "title": "BLACK+DECKER Tondeuse Filaire 1000W, Tondeuse à Gazon Electrique 32 cm, 3 hauteurs réglables 20, 40 et 60 mm, Tondeuse Légère avec Poignée Type Landau, Idéale Jusqu'à 300 m², BEMW351-QS",
+      "price": 69.99,
+      "image": "tondeuse.webp",
+      "categoryId": 5,
+      "tagId": null
+    },
+    {
+      "id": 20,
+      "title": "LEGO Star Wars Millennium Falcon, Set pour Adultes du 25e Anniversaire, Vaisseau Spatial à Collectionner, Décoration d'Intérieure, Véhicule Mythique, Cadeau d’Anniversaire pour Fans de la Saga 75375",
+      "price": 69.99,
+      "image": "lego.webp",
+      "categoryId": 6,
+      "tagId": null
+    },
+    {
+      "id": 21,
+      "title": "Wdk Partner- QUILLES Nordiques, WP-021C, Multicolore, Small",
+      "price": 14.5,
+      "image": "molki.webp",
+      "categoryId": 6,
+      "tagId": null
+    },
+    {
+      "id": 22,
+      "title": "Nerf Elite 2.0, Blaster motorisé Double Punch, canons alternatifs Rapides, 50 fléchettes Nerf Elite, 2 chargeurs 10 fléchettes, dès 8 Ans",
+      "price": 19.99,
+      "image": "nerf.webp",
+      "categoryId": 6,
+      "tagId": null
+    },
+    {
+      "id": 23,
+      "title": "ZENAGAME Le Traquenard, Le Jeu Alcool de 300 Cartes Fun et Hilarantes pour tes Soirées Posées ou Endiablées - Jeux de Société, Jeu Adulte",
+      "price": 19.99,
+      "image": "traquenard.webp",
+      "categoryId": 6,
+      "tagId": null
+    },
+    {
+      "id": 24,
+      "title": "Stellar Blade, Édition Standard, PlayStation 5",
+      "price": 60.9,
+      "image": "blade.webp",
+      "categoryId": 7,
+      "tagId": null
+    },
+    {
+      "id": 25,
+      "title": "Sony, Manette sans fil DualSense™, PlayStation 5, Batterie rechargeable, Bluetooth, Compatible PS5 et PC, couleur midnight black noire",
+      "price": 64,
+      "image": "manette.webp",
+      "categoryId": 7,
+      "tagId": 1
+    },
+    {
+      "id": 26,
+      "title": "Nintendo Console Switch avec Joy-Con bleu néon et rouge néon",
+      "price": 266.09,
+      "image": "switch.webp",
+      "categoryId": 7,
+      "tagId": null
+    },
+    {
+      "id": 27,
+      "title": "The Legend of Zelda : Tears of the Kingdom",
+      "price": 51.49,
+      "image": "zelda-totk.webp",
+      "categoryId": 7,
+      "tagId": null
+    },
+    {
+      "id": 28,
+      "title": "Voice Content and Usability (English Edition)",
+      "price": 25.12,
+      "image": "accessibilite.webp",
+      "categoryId": 8,
+      "tagId": null
+    },
+    {
+      "id": 29,
+      "title": "H2G2: L'intégrale de la trilogie en cinq volumes",
+      "price": 32.9,
+      "image": "h2g2.webp",
+      "categoryId": 8,
+      "tagId": null
+    },
+    {
+      "id": 30,
+      "title": "Learning React: Modern Patterns for Developing React Apps",
+      "price": 55.77,
+      "image": "react.webp",
+      "categoryId": 8,
+      "tagId": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Animalerie",
+      "slug": "animalerie",
+      "image": "animalerie.webp"
+    },
+    {
+      "id": 2,
+      "title": "Beauté et parfum",
+      "slug": "beaute-et-parfum",
+      "image": "beaute-et-parfum.webp"
+    },
+    {
+      "id": 3,
+      "title": "Bricolage",
+      "slug": "bricolage",
+      "image": "bricolage.webp"
+    },
+    {
+      "id": 4,
+      "title": "Informatique",
+      "slug": "informatique",
+      "image": "informatique.webp"
+    },
+    {
+      "id": 5,
+      "title": "Jardin",
+      "slug": "jardin",
+      "image": "jardin.webp"
+    },
+    {
+      "id": 6,
+      "title": "Jeux et jouets",
+      "slug": "jeux",
+      "image": "jeux.webp"
+    },
+    {
+      "id": 7,
+      "title": "Jeux vidéos",
+      "slug": "jeux-videos",
+      "image": "jeux-videos.webp"
+    },
+    {
+      "id": 8,
+      "title": "Livres",
+      "slug": "livres",
+      "image": "livres.webp"
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "type": "choice",
+      "text": "Choix <span>d'Omazon</span>"
+    },
+    {
+      "id": 2,
+      "type": "new",
+      "text": "Nouveauté"
+    },
+    {
+      "id": 3,
+      "type": "best-seller",
+      "text": "N°1 des ventes"
+    },
+    {
+      "id": 4,
+      "type": "flash",
+      "text": "Vente flash"
+    }
+  ],
+  "carts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "productId": 1
+    },
+    {
+      "userId": 1,
+      "productId": 8,
+      "id": 2
+    }
+  ]
+}
