@@ -67,7 +67,7 @@
                     const productImage = document.createElement('img');
                     productImage.src = product.image.startsWith('http')
                         ? product.image
-                        : `/photos/${product.image}`;
+                        : `/photos/products/${product.image}`;
                     productDiv.appendChild(productImage);
                     
                     const productDescription = document.createElement('div');

@@ -50,17 +50,17 @@
     },
     {
       "id": 5,
-      "title": "L'Oréal Paris - CC Crème C'est Magic - Embellisseur de Teint Anti-Rougeurs- Soin Teinté - Tous Types de Peaux - Couvrance Légère et Naturelle - SPF 11 - Teinte : Universelle - 30 ml",
-      "price": 11.64,
-      "image": "creme.webp",
+      "title": "ESSIE nail polish - Vernis à ongles 13.5 ml color Strut Your Stuff",
+      "price": 9.11,
+      "image": "vernis.webp",
       "categoryId": 2,
       "tagId": null
     },
     {
       "id": 6,
-      "title": "Maybelline New-York - Mascara volume et longueur - Sky High – Teinte : Marron, 7,2 ml",
-      "price": 9.11,
-      "image": "mascara.webp",
+      "title": "Palette Lancôme Hypnôse 5 teintes roses - palette de fards à paupières, couleur 06 Reflets d’Amethyste 4 g",
+      "price": 51.64,
+      "image": "maquillage.webp",
       "categoryId": 2,
       "tagId": 4
     },
@@ -91,7 +91,7 @@
     {
       "id": 10,
       "title": "Scie sauteuse 720W avec 6 lames dans coffret Makpac - MAKITA 4351FCTJ",
-      "price": 146,
+      "price": 146.0,
       "image": "scie-sauteuse.webp",
       "categoryId": 3,
       "tagId": 2
@@ -106,38 +106,46 @@
     },
     {
       "id": 12,
-      "title": "Teamgee Écran Portable de 14\", Extension Écran FHD IPS pour Ordinateur Portable avec Pliable à 90°/Deux Haut-Parleurs, HDMI/USB-A/Type-C Plug and Play pour Ordinateurs Portables",
-      "price": 245.99,
-      "image": "portable.webp",
+      "title": "Vans Sk8-Hi rose léopard Slim VQG369O, Baskets mode mixte adulte",
+      "price": 59.57,
+      "image": "vans.webp",
       "categoryId": 4,
-      "tagId": null
+      "tagId": 2
     },
     {
       "id": 13,
-      "title": "kacbuy Carte SD 512 Go Carte Mémoire Haute Vitesse Carte TF étanche Enregistrement Vidéo SD Carte pour Smartphone, Dashcam, Drone et Caméra d'action (512Go)",
-      "price": 19.99,
-      "image": "sd.webp",
+      "title": "Pantoufles Mignon Furry Alpaga Rose Peluche Animal Fun",
+      "price": 18.99,
+      "image": "chaussons.webp",
       "categoryId": 4,
       "tagId": null
     },
     {
       "id": 14,
-      "title": "niuniutab Tablette Android,Tablette10 Pouces,4 Go de RAM 64 Go de ROM (128 Go Extensible),Caméra 2MP+ 8MP，2.5D IPS 800x1280 FHD，Grande Batterie Tablette Tactile.(Argent)",
-      "price": 79.99,
-      "image": "tablet.webp",
+      "title": "LA SPORTIVA Jackal II - Chaussures Trail Femme",
+      "price": 138.9,
+      "image": "sportiva.webp",
       "categoryId": 4,
-      "tagId": 4
+      "tagId": null
     },
     {
       "id": 15,
-      "title": "Locpof Clé USB 982 Go USB 3.0 Cle USB Clef USB 982 Go avec Porte-Clés Mémoire Stick Métal Imperméable Mini Clés USB pour PC tablettes, Ordinateurs Portables",
-      "price": 21.99,
-      "image": "usb-key.webp",
+      "title": "DC Shoes Homme Pure High-Top WC Winter Basket",
+      "price": 71.95,
+      "image": "dc-shoes.webp",
       "categoryId": 4,
       "tagId": null
     },
     {
       "id": 16,
+      "title": "Tommy Hilfiger Femme Chaussures Semelles Compensées Espadrilles Talon Compensé",
+      "price": 64.95,
+      "image": "espadrilles.webp",
+      "categoryId": 4,
+      "tagId": 1
+    },
+    {
+      "id": 17,
       "title": "Weber Barbecue à Charbon Compact Kettle 47cm - Barbecue à Couvercle, Trépied et Roues - Barbecue d'Extérieur Autoportant avec Vasque en Porcelaine Émaillée - Noir (1221004)",
       "price": 70.95,
       "image": "bbq.webp",
@@ -145,7 +153,7 @@
       "tagId": 2
     },
     {
-      "id": 17,
+      "id": 18,
       "title": "Edihome, Kit Barbecue, Ustensiles Barbecue, Ensemble d'accessoires de 25 pièces, Professionnel, Acier Inoxydable, Cadeau d'homme, Étui de Gril de Qualité Supérieure.",
       "price": 29.99,
       "image": "bbq-kit.webp",
@@ -153,7 +161,7 @@
       "tagId": null
     },
     {
-      "id": 18,
+      "id": 19,
       "title": "Kärcher Nettoyeur Haute Pression K 2 Universal Edition, Pression : max. 110 bar, Débit : 360 l/h, Surface : 20 m²/h, Filtre à Eau, Poids : 3,8 kg, Flexible et Pistolet Haute Pression, Rotabuse",
       "price": 63.95,
       "image": "karcher.webp",
@@ -161,15 +169,23 @@
       "tagId": null
     },
     {
-      "id": 19,
-      "title": "BLACK+DECKER Tondeuse Filaire 1000W, Tondeuse à Gazon Electrique 32 cm, 3 hauteurs réglables 20, 40 et 60 mm, Tondeuse Légère avec Poignée Type Landau, Idéale Jusqu'à 300 m², BEMW351-QS",
+      "id": 20,
+      "title": "BLACK+DECKER Tondeuse Filaire 1000W, Tondeuse à Gazon Electrique 32 cm, 3 hauteurs réglables 20, 40 et 60 mm, Tondeuse Légère avec Poignée type Landau, idéale Jusqu'à 300 m², BEMW351-QS",
       "price": 69.99,
       "image": "tondeuse.webp",
       "categoryId": 5,
       "tagId": null
     },
     {
-      "id": 20,
+      "id": 21,
+      "title": "BTFL Cody Surfskate 2024 Skateboard, Longboard",
+      "price": 208.89,
+      "image": "surfskate.webp",
+      "categoryId": 6,
+      "tagId": null
+    },
+    {
+      "id": 22,
       "title": "LEGO Star Wars Millennium Falcon, Set pour Adultes du 25e Anniversaire, Vaisseau Spatial à Collectionner, Décoration d'Intérieure, Véhicule Mythique, Cadeau d’Anniversaire pour Fans de la Saga 75375",
       "price": 69.99,
       "image": "lego.webp",
@@ -177,7 +193,7 @@
       "tagId": null
     },
     {
-      "id": 21,
+      "id": 23,
       "title": "Wdk Partner- QUILLES Nordiques, WP-021C, Multicolore, Small",
       "price": 14.5,
       "image": "molki.webp",
@@ -185,7 +201,7 @@
       "tagId": null
     },
     {
-      "id": 22,
+      "id": 24,
       "title": "Nerf Elite 2.0, Blaster motorisé Double Punch, canons alternatifs Rapides, 50 fléchettes Nerf Elite, 2 chargeurs 10 fléchettes, dès 8 Ans",
       "price": 19.99,
       "image": "nerf.webp",
@@ -193,7 +209,7 @@
       "tagId": null
     },
     {
-      "id": 23,
+      "id": 25,
       "title": "ZENAGAME Le Traquenard, Le Jeu Alcool de 300 Cartes Fun et Hilarantes pour tes Soirées Posées ou Endiablées - Jeux de Société, Jeu Adulte",
       "price": 19.99,
       "image": "traquenard.webp",
@@ -201,7 +217,7 @@
       "tagId": null
     },
     {
-      "id": 24,
+      "id": 26,
       "title": "Stellar Blade, Édition Standard, PlayStation 5",
       "price": 60.9,
       "image": "blade.webp",
@@ -209,15 +225,15 @@
       "tagId": null
     },
     {
-      "id": 25,
+      "id": 27,
       "title": "Sony, Manette sans fil DualSense™, PlayStation 5, Batterie rechargeable, Bluetooth, Compatible PS5 et PC, couleur midnight black noire",
-      "price": 64,
+      "price": 64.0,
       "image": "manette.webp",
       "categoryId": 7,
       "tagId": 1
     },
     {
-      "id": 26,
+      "id": 28,
       "title": "Nintendo Console Switch avec Joy-Con bleu néon et rouge néon",
       "price": 266.09,
       "image": "switch.webp",
@@ -225,7 +241,7 @@
       "tagId": null
     },
     {
-      "id": 27,
+      "id": 29,
       "title": "The Legend of Zelda : Tears of the Kingdom",
       "price": 51.49,
       "image": "zelda-totk.webp",
@@ -233,7 +249,7 @@
       "tagId": null
     },
     {
-      "id": 28,
+      "id": 30,
       "title": "Voice Content and Usability (English Edition)",
       "price": 25.12,
       "image": "accessibilite.webp",
@@ -241,7 +257,7 @@
       "tagId": null
     },
     {
-      "id": 29,
+      "id": 31,
       "title": "H2G2: L'intégrale de la trilogie en cinq volumes",
       "price": 32.9,
       "image": "h2g2.webp",
@@ -249,7 +265,7 @@
       "tagId": null
     },
     {
-      "id": 30,
+      "id": 32,
       "title": "Learning React: Modern Patterns for Developing React Apps",
       "price": 55.77,
       "image": "react.webp",
@@ -278,9 +294,9 @@
     },
     {
       "id": 4,
-      "title": "Informatique",
-      "slug": "informatique",
-      "image": "informatique.webp"
+      "title": "Chaussures",
+      "slug": "chaussures",
+      "image": "chaussures.webp"
     },
     {
       "id": 5,
@@ -290,7 +306,7 @@
     },
     {
       "id": 6,
-      "title": "Jeux et jouets",
+      "title": "Jeux et loisirs",
       "slug": "jeux",
       "image": "jeux.webp"
     },
