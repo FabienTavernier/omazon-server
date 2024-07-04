@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Omazon API</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+        <h1>Omazon API</h1>
+        <ul>
+          <li><a href="#get-resource">Lister</a></li>
+          <li><a href="#post-resource">Ajouter</a></li>
+          <li><a href="#update-resource">Modifier</a></li>
+          <li><a href="#delete-resource">Supprimer</a></li>
+          <li><a href="#filter-resource">Filtrer</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2>Ressources</h2>
+
+        <ul>
+          <li>
+            <a href="https://omazon-server.onrender.com/api/users">https://omazon-server.onrender.com/api/users</a>
+          </li>
+          <li>
+            <a href="https://omazon-server.onrender.com/api/products">https://omazon-server.onrender.com/api/products</a>
+          </li>
+        </ul>
+
+        <h2>Guide</h2>
+        
+        <p>Pour accéder aux ressources et les modifier, vous pouvez utiliser les méthodes HTTP&nbsp;:</p>
+        <p>
+          <code>GET</code>
+          <code>POST</code>
+          <code>PUT</code>
+          <code>PATCH</code>
+          <code>DELETE</code>
+          <code>OPTIONS</code>
+        </p>
+        <p>
+          Les exemples suivants utilisent l'<a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">API Fetch</a>.
+          Vous êtes libres d'utiliser une autre solution (Axios, Ky…).
+        </p>
+
+        <h3 id="get-resource">Récupérer toutes les données</h3>
+        <pre><code class="js language-js">
+          fetch('https://omazon-server.onrender.com/products')
+            .then((response) => response.json())
+            .then((json) => console.log(json))
+
+          // Output
+          [
+            { id: 1, title: 'Trixie Frisbee…' /* ... */ },
+            /* ... */
+            { id: 2, title: 'PETKIT Pura Max' /* ... */ }
+          ]
+        </code></pre>
+
+        <h3>Récupérer une donnée</h3>
+
+        <pre><code class="js language-js">
+          fetch('https://omazon-server.onrender.com/api/products/1')
+            .then((response) => response.json())
+            .then((json) => console.log(json))
+
+          // Output
+          {
+            id: 1,
+            title: 'Trixie Frisbee Caoutchouc Naturel 22 cm pour Chien, Coloris aléatoire',
+            price: 8.99,
+            image: 'frisbee.webp',
+            category: {
+              id: 1,
+              title: 'Animalerie',
+              slug: 'animalerie',
+              image: 'animalerie.webp'
+            },
+            tag: {
+              id: 3,
+              type: 'best-seller',
+              text: 'N°1 des ventes'
+            }
+          }
+        </code></pre>
+
+        <h3 id="post-resource">Ajouter une donnée</h3>
+        <pre><code class="js language-js">
+          fetch('https://omazon-server.onrender.com/api/products', {
+            method: 'POST',
+            body: JSON.stringify({
+              title: 'Dragon Ball - Full Color - L'enfance de Goku - Tome 01',
+              price: 14.95,
+              image: 'https://m.media-amazon.com/images/I/81JkZVR-x+L._SL1500_.jpg',
+              categoryId: 8,
+              tagId: 3
+            }),
+            headers: {
+              'Content-type': 'application/json; charset=UTF-8'
+            }
+          })
+            .then((response) => response.json())
+            .then((json) => console.log(json))
+
+          // Output
+          {
+            {
+              id: 33,
+              title: 'Dragon Ball - Full Color - L'enfance de Goku - Tome 01',
+              price: 14.95,
+              image: 'https://m.media-amazon.com/images/I/81JkZVR-x+L._SL1500_.jpg',
+              categoryId: 8,
+              tagId: 3
+            }
+          }
+        </code></pre>
+
+        <p>
+          <b>Important&nbsp;:</b>
+          la donnée sera effectivement créée sur le serveur (public)…
+          Attention aux informations renseignées.
+        </p>
+
+        <h3 id="update-resource">Mettre à jour une donnée</h3>
+        <h4>Méthode <code>PUT</code></h4>
+
+        <pre><code class="js language-js">
+          fetch('https://omazon-server.onrender.com/api/products/33', {
+            method: 'PUT',
+            body: JSON.stringify({
+              id: 33,
+              title: 'Dragon Ball - Full Color - L'enfance de Goku - Tome 01',
+              price: 14.95,
+              image: 'https://m.media-amazon.com/images/I/81JkZVR-x+L._SL1500_.jpg',
+              categoryId: 8,
+              tagId: null
+            }),
+            headers: {
+              'Content-type': 'application/json; charset=UTF-8'
+            }
+          })
+          .then((response) => response.json())
+          .then((json) => console.log(json))
+
+        // Output
+        {
+          id: 33,
+          title: 'Dragon Ball - Full Color - L'enfance de Goku - Tome 01',
+          price: 14.95,
+          image: 'https://m.media-amazon.com/images/I/81JkZVR-x+L._SL1500_.jpg',
+          categoryId: 8,
+          tagId: null
+        }
+        </code></pre>
+
+        <h4>Méthode <code>PATCH</code></h4>
+
+        <pre><code class="js language-js">
+          fetch('https://omazon-server.onrender.com/api/products/5264493', {
+            method: 'PATCH',
+            body: JSON.stringify({
+              price: 12.59
+            }),
+            headers: {
+              'Content-type': 'application/json; charset=UTF-8'
+            }
+          })
+          .then((response) => response.json())
+          .then((json) => console.log(json))
+
+        // Output
+        {
+          id: 33,
+          title: 'Dragon Ball - Full Color - L'enfance de Goku - Tome 01',
+          price: 12.59,
+          image: 'https://m.media-amazon.com/images/I/81JkZVR-x+L._SL1500_.jpg',
+          categoryId: 8,
+          tagId: null
+        }
+        </code></pre>
+        
+        <p>
+          <b>Important&nbsp;:</b>
+          la donnée sera effectivement mise à jour sur le serveur (public)…
+          Attention aux informations renseignées.
+        </p>
+
+        <h3 id="delete-resource">Supprimer une donnée</h3>
+
+        <pre><code class="js language-js">
+          fetch('https://omazon-server.onrender.com/api/products/33', {
+            method: 'DELETE'
+          })
+        </code></pre>
+        
+        <p>
+          <b>Important&nbsp;:</b>
+          la donnée sera effectivement supprimer du serveur…
+          Ne pas tout supprimer.
+        </p>
+
+        <h3 id="filter-resource">Filtrer les données</h3>
+        <h4>Paramètres de la requête</h4>
+
+        <pre><code class="js language-js">
+          // Retourne tous les produits marqués comme « Nouveauté »
+          fetch('https://omazon-server.onrender.com/api/products?tagId=2')
+            .then((response) => response.json())
+            .then((json) => console.log(json))
+        </code></pre>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>
+          Powered by
+          <a href="https://github.com/typicode/json-server">JSON Server</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

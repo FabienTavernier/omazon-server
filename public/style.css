@@ -1,0 +1,123 @@
+html {
+  scroll-padding-top: 6rem;
+}
+
+body {
+  color: rgba(0, 0, 0, 0.84);
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+a {
+  color: #048ba8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+  max-width: 60rem;
+  padding: 0 1rem;
+}
+
+header {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li:first-of-type a {
+  padding-left: 0;
+}
+
+nav li:last-of-type a {
+  padding-right: 0;
+}
+
+nav li a {
+  color: inherit;
+  display: block;
+  padding: 0 1.5rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 960px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    overflow-x: auto;
+    padding: 1rem 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 492px) {
+  nav ul {
+    justify-content: center;
+  }
+}
+
+main {
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+}
+
+pre {
+  background: #fafafa;
+}
+
+code {
+  padding: 0.2rem 0.5rem;
+  margin: 0rem 0.2rem;
+  border-radius: 0.2rem;
+  background: #fafafa;
+}
+
+footer {
+  background-color: #f8fafc;
+  padding: 3rem;
+  text-align: center;
+}
