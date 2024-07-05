@@ -34,13 +34,16 @@
 
         <ul>
           <li>
-            <a href="https://omazon-server.onrender.com/api/users">https://omazon-server.onrender.com/api/users</a>
+            <a href="https://omazon-server.onrender.com/users">https://omazon-server.onrender.com/users</a>
           </li>
           <li>
-            <a href="https://omazon-server.onrender.com/api/products">https://omazon-server.onrender.com/api/products</a>
+            <a href="https://omazon-server.onrender.com/products">https://omazon-server.onrender.com/products</a>
           </li>
           <li>
-            <a href="https://omazon-server.onrender.com/api/categories">https://omazon-server.onrender.com/api/categories</a>
+            <a href="https://omazon-server.onrender.com/categories">https://omazon-server.onrender.com/categories</a>
+          </li>
+          <li>
+            <a href="https://omazon-server.onrender.com/tags">https://omazon-server.onrender.com/tags</a>
           </li>
         </ul>
 
@@ -77,7 +80,7 @@
         <h3>Récupérer une donnée</h3>
 
         <pre><code class="js language-js">
-          fetch('https://omazon-server.onrender.com/api/products/1')
+          fetch('https://omazon-server.onrender.com/products/1')
             .then((response) => response.json())
             .then((json) => console.log(json))
 
@@ -103,7 +106,7 @@
 
         <h3 id="post-resource">Ajouter une donnée</h3>
         <pre><code class="js language-js">
-          fetch('https://omazon-server.onrender.com/api/products', {
+          fetch('https://omazon-server.onrender.com/products', {
             method: 'POST',
             body: JSON.stringify({
               title: 'Dragon Ball - Full Color - L'enfance de Goku - Tome 01',
@@ -142,7 +145,7 @@
         <h4>Méthode <code>PUT</code></h4>
 
         <pre><code class="js language-js">
-          fetch('https://omazon-server.onrender.com/api/products/33', {
+          fetch('https://omazon-server.onrender.com/products/33', {
             method: 'PUT',
             body: JSON.stringify({
               id: 33,
@@ -173,7 +176,7 @@
         <h4>Méthode <code>PATCH</code></h4>
 
         <pre><code class="js language-js">
-          fetch('https://omazon-server.onrender.com/api/products/5264493', {
+          fetch('https://omazon-server.onrender.com/products/5264493', {
             method: 'PATCH',
             body: JSON.stringify({
               price: 12.59
@@ -205,7 +208,7 @@
         <h3 id="delete-resource">Supprimer une donnée</h3>
 
         <pre><code class="js language-js">
-          fetch('https://omazon-server.onrender.com/api/products/33', {
+          fetch('https://omazon-server.onrender.com/products/33', {
             method: 'DELETE'
           })
         </code></pre>
@@ -221,10 +224,27 @@
 
         <pre><code class="js language-js">
           // Retourne tous les produits marqués comme « Nouveauté »
-          fetch('https://omazon-server.onrender.com/api/products?tagId=2')
+          fetch('https://omazon-server.onrender.com/products?tagId=2')
             .then((response) => response.json())
             .then((json) => console.log(json))
         </code></pre>
+
+        <h3>Relations</h3>
+
+        <pre><code class="js language-js">
+          // Retourne tous les produits avec les informations de son tag
+          fetch('https://omazon-server.onrender.com/products?_expand=tag')
+            .then((response) => response.json())
+            .then((json) => console.log(json))
+        </code></pre>
+
+        <pre><code class="js language-js">
+          // Retourne tous les produits avec les informations de son tag et de sa catégorie
+          fetch('https://omazon-server.onrender.com/products?_expand=tag&_expand=category')
+            .then((response) => response.json())
+            .then((json) => console.log(json))
+        </code></pre>
+      </div>
       </div>
     </main>
 

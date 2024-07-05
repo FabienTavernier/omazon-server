@@ -30,7 +30,7 @@
       "price": 599.99,
       "image": "litiere.webp",
       "categoryId": 1,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 3,
@@ -54,7 +54,7 @@
       "price": 9.11,
       "image": "vernis.webp",
       "categoryId": 2,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 6,
@@ -78,7 +78,7 @@
       "price": 16.97,
       "image": "multimetre.webp",
       "categoryId": 3,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 9,
@@ -86,7 +86,7 @@
       "price": 24.9,
       "image": "scie.webp",
       "categoryId": 3,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 10,
@@ -102,7 +102,7 @@
       "price": 28.78,
       "image": "tournevis.webp",
       "categoryId": 3,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 12,
@@ -118,7 +118,7 @@
       "price": 18.99,
       "image": "chaussons.webp",
       "categoryId": 4,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 14,
@@ -126,7 +126,7 @@
       "price": 138.9,
       "image": "sportiva.webp",
       "categoryId": 4,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 15,
@@ -134,7 +134,7 @@
       "price": 71.95,
       "image": "dc-shoes.webp",
       "categoryId": 4,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 16,
@@ -158,7 +158,7 @@
       "price": 29.99,
       "image": "bbq-kit.webp",
       "categoryId": 5,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 19,
@@ -166,7 +166,7 @@
       "price": 63.95,
       "image": "karcher.webp",
       "categoryId": 5,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 20,
@@ -174,7 +174,7 @@
       "price": 69.99,
       "image": "tondeuse.webp",
       "categoryId": 5,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 21,
@@ -182,7 +182,7 @@
       "price": 208.89,
       "image": "surfskate.webp",
       "categoryId": 6,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 22,
@@ -190,7 +190,7 @@
       "price": 69.99,
       "image": "lego.webp",
       "categoryId": 6,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 23,
@@ -198,7 +198,7 @@
       "price": 14.5,
       "image": "molki.webp",
       "categoryId": 6,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 24,
@@ -206,7 +206,7 @@
       "price": 19.99,
       "image": "nerf.webp",
       "categoryId": 6,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 25,
@@ -214,7 +214,7 @@
       "price": 19.99,
       "image": "traquenard.webp",
       "categoryId": 6,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 26,
@@ -222,7 +222,7 @@
       "price": 60.9,
       "image": "blade.webp",
       "categoryId": 7,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 27,
@@ -238,7 +238,7 @@
       "price": 266.09,
       "image": "switch.webp",
       "categoryId": 7,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 29,
@@ -246,7 +246,7 @@
       "price": 51.49,
       "image": "zelda-totk.webp",
       "categoryId": 7,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 30,
@@ -254,7 +254,7 @@
       "price": 25.12,
       "image": "accessibilite.webp",
       "categoryId": 8,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 31,
@@ -262,7 +262,7 @@
       "price": 32.9,
       "image": "h2g2.webp",
       "categoryId": 8,
-      "tagId": null
+      "tagId": 0
     },
     {
       "id": 32,
