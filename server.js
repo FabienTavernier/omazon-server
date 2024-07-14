@@ -65,7 +65,10 @@ server.get('/cart', (req, res) => {
     }
   }
 
-  res.status(200).json([]);
+  const status = 401;
+  const message = 'Accès non autorisé. Merci de vous ré-identifier.';
+
+  return res.status(status).json({ status, message });
 });
 
 server.use(router);
